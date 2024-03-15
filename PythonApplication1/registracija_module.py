@@ -1,20 +1,26 @@
-def info(k:list,p:list)->any:
+def info(k:list,p:list,da:int)->any:
     """
 
     """
     print("kasutajad: ", k)
-    print("paarollid: ", p)
+    print("parolid: ", p)
+    print(da)
 
 
-def log_in(k:list,p:list,d:int)->any:
+def log_in(k:list,p:list,da:int)->any:
     """
 
     """
-    username=input("Vvedite username")
-    parol=input("Vvedite parol")
+    username=input("Vvedite username: ")
+    parol=input("Vvedite parol: ")
     k.append(username)
     p.append(parol)
+    da=1
+    return k,p,da
 
 
 
 def sign_in():
+    """
+
+    """
